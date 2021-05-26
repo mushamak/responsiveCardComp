@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+
+* {
+    margin: 0;
+}
+body {
+    box-sizing: border-box;
+    display: grid;
+    text-align: center;
+    place-content: center;
+    min-height: 100vh;
+    background-color: hsl(233, 47%, 7%);
+}
+main {
+    max-width: 1000px;
+    display: flex;
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 8px;
+    overflow: hidden;
+}
+.container1 {
+    width: 50%;
+    padding: 2.5rem 3rem;
+}
+
+.image_container {
+    width: 50%;
+    background-color: hsl(277, 64%, 61%);
+}
+
+img {
+    width: 100%;
+    opacity: 0.4;
+    height: 100%;
+}
+h1 {
+    color: hsl(0, 0%, 100%);
+    font-family: "Inter", sans-serif;
+    padding-bottom: 1.5rem;
+    padding-right: 2.5rem;
+    text-align: start;
+}
+.numbers p {
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    color: hsl(0, 0%, 100%);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: start;
+}
+.numbers {
+    display: flex;
+    /* justify-content: space-evenly; */
+    gap: 2.8rem;
+    text-align: start;
+    line-height: 3rem;
+}
+div .white {
+    color: hsla(0, 0%, 100%, 0.6);
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.6);
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 15px;
+    padding-bottom: 4rem;
+    padding-right: 2.5rem;
+    text-align: start;
+    letter-spacing: 0.5px;
+    line-height: 1.5rem;
+}
+.colored {
+    color: hsl(277, 64%, 61%);
+}
+
+@media only screen and (max-width: 375px) {
+    main {
+        display: flex;
+        flex-direction: column-reverse;
+        min-height: 100%;
+    }
+    .image_container {
+        width: 100%;
+    }
+    img {
+        width: 100%;
+        height: 100%;
+    }
+    .container1 {
+        padding: 85px;
+    }
+
+    h1 {
+        text-align: center;
+        padding-bottom: 1rem;
+        padding-right: 0;
+    }
+    p {
+        text-align: center;
+        padding: 0;
+    }
+    .numbers {
+        display: inline-block;
+        line-height: 4rem;
+        padding-top: 4rem;
+    }
+    .attribution {
+        display: none;
+    }
+}
+
+.attribution {
+    font-size: 11px;
+    position: relative;
+    padding: 20px;
+    color: white;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
